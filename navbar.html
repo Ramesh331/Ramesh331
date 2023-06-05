@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: aqua;
+        }
+        .nav-item {
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-list {
+            padding: 10px;
+        }
+
+        button {
+            border: 2px solid black;
+            height: 33px;
+            width: 44px;
+            margin-right: 12px;
+            border-radius: 6px;
+            background-color: aqua;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul class="nav-item">
+                <li class="nav-list"><a href="form.html">Home</a></li>
+                <li class="nav-list"><a href="">About us</a></li>
+                <li class="nav-list">Works</li>
+                <li class="nav-list">Education</li>
+                <li class="nav-list">Experience</li>
+                <li class="nav-list">Contact</li>
+            </ul>
+            <div class="login">
+                <button type="btn">Login</button>
+            </div>
+        </nav>
+    </header>
+
+</body>
+
+</html>

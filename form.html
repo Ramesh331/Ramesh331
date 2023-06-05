@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .form-group {
+
+            display: table-row;
+            margin: 10px;
+
+        }
+
+        .form-all {
+            display: table;
+            background-color: aqua;
+        }
+
+        .form-control {
+            padding: 5px;
+            display: table-cell;
+            margin: 10px;
+
+
+        }
+
+        .form-end {
+            margin: 0px;
+        }
+
+        .select-box {
+            margin-right: 8px;
+            height: 41px;
+            border: none;
+            background-color: antiquewhite;
+            color: rgb(255, 20, 20);
+        }
+
+        .adjust {
+            display: inline-block;
+            position: relative;
+
+            width: 100px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="get" class="form-all">
+        <div class="form-group">
+            <label for="Username" class="adjust">Username</label>
+            <input type="text" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="email" class="adjust">E-mail</label>
+            <input type="text" class="form-control" required>
+
+        </div>
+        <div class="form-group">
+            <label for="Password" class="adjust">Password</label>
+            <input type="password" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="Telephone" class="adjust">Phone no</label>
+            <select name="" id="111" class="select-box">
+                <option value="1">+977</option>
+                <option value="2">+938</option>
+                <option value="3">+897</option>
+            </select>
+
+            <input type="tel" pattern="[0-9]{10}" class="form-control">
+        </div>
+
+
+        <div class="form-end">
+            <label for="Fedback" class="adjust">Feedback</label>
+
+            <textarea name="form-control" id="" cols="30" rows="10" placeholder="comment"
+                style="max-height: 20px"></textarea>
+
+        </div>
+        <div class="form-end">
+            <button type="btn" class="form-control">Submit</button>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
